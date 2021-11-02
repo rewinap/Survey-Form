@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+           <h1 id="title" class="titile-center">Kesan dan Pesan pada Asdos Matdis</h1>
+           <p id="description" class="description-textcenter">Terimakasih atas kebersamaan kita selama ini, bantu kami untuk meningkatkan kinerja kami kedepannya </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Nama</label>
+                    <input 
+                        type="text" 
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Nama anda"
+                        required
+                    />
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Email anda"
+                        required
+                    />
+            </div>
+            <div class="form-group">
+                <label for="age" id="number-label">Angkatan <span>(Optional)</span></label>
+                    <input 
+                        type="number"
+                        name="age"
+                        id="number"
+                        min="10"
+                        max="99"
+                        class="form-control"
+                        placeholder=Angkatan"
+                    />
+            </div>
+            <div class="form-group">
+                <p>Peran Anda</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Pilih Peran Anda</option>
+                    <option value="student">Mahasiswa D3</option>
+                    <option value="IS-student">Mahasiswa SI</option>
+                    <option value="TE-student">Mahasiswa TE</option>
+                    <option value="IF-student">Mahasiswa IF</option>
+                    <option value="dosen">Dosen</option>
+                    <option value="asdos">Asdos</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Asdos Favoritmu</p>
+                <label>
+                    <input 
+                        type="radio"
+                        name="asdos-fav"
+                        value="Rewina"
+                        checked
+                    />Rewina Pakpahan
+                </label>
+                <label>
+                    <input 
+                        type="radio"
+                        name="asdos-fav"
+                        value="Mulya"
+                        checked
+                    />Mulya Ginting
+                </label>
+                <label>
+                    <input 
+                        type="radio"
+                        name="asdos-fav"
+                        value="Nico"
+                        checked
+                    />Nico Rajagukguk
+                </label>
+                <label>
+                    <input 
+                        type="radio"
+                        name="asdos-fav"
+                        value="Yosua"
+                        checked
+                    />Yosua Silaban
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Media apa yang paling nyaman digunakan ketika tutor</p>
+                <select name="mostlike" id="most-like" class="form-contol" required>
+                    <option disabled selected value>Pilih Media</option>
+                    <option value="zoom">Zoom</option>
+                    <option value="g-meet">Google Meet</option>
+                    <option value="skype">Skype</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Topik pelajaran apa yang kamu sukai ketika tutor?<span>(bisa pilih lebih dari 1)</span></p>
+                    <label">
+                        <input 
+                            type="checkbox" 
+                            name="kesukaan" 
+                            value="function"
+                            id="function"
+                            class="input-checkbox"
+                        />Function
+                    </label>
+                    <label>
+                        <input 
+                        type="checkbox" 
+                        name="kesukaan" 
+                        value="matrices"
+                        class="input-checkbox"
+                        id="matrices">Matrices
+                    </label>
+                    <label>
+                        <input 
+                        type="checkbox" 
+                        name="kesukaan" 
+                        value="sets"
+                        class="input-checkbox"
+                        id="sets">Sets
+                    </label>
+                    <label>
+                        <input 
+                        type="checkbox" 
+                        name="kesukaan" 
+                        value="graph"
+                        class="input-checkbox"
+                        id="graph">Graph
+                    </label>
+                    <label>
+                        <input 
+                        type="checkbox" 
+                        name="kesukaan" 
+                        value="cryptography"
+                        class="input-checkbox"
+                        id="cryptogrpahy">Cryptogrpahy
+                    </label>
+                    <label>
+                        <input 
+                        type="checkbox" 
+                        name="kesukaan" 
+                        value="numberteori"
+                        class="input-checkbox"
+                        id="numberteori">Number Teori
+                    </label>
+                    <label>
+                        <input 
+                        type="checkbox" 
+                        name="kesukaan" 
+                        value="algorithm"
+                        class="input-checkbox"
+                        id="algorithm">Algorithm
+                    </label>
+                    <label>
+                        <input 
+                        type="checkbox" 
+                        name="kesukaan" 
+                        value="tree"
+                        class="input-checkbox"
+                        id="tree">Tree
+                    </label>
+            </div>
+            <div class="form-group">
+                <p>Kesan dan Pesan Anda selama tutor</p>
+                <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Kesan dan pesan anda"></textarea>
+            </div>
+            <div class="form-group">
+                <button
+                    type="submit"
+                    id="submit"
+                    class="submit-button">Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
